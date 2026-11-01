@@ -1,1 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nayara Goulart · Estética Avançada · Jaboatão dos Guararapes</title>
+  <meta name="description" content="Estética avançada com precisão científica e atendimento exclusivo em Jaboatão dos Guararapes. Toxina botulínica, laser, harmonização facial e protocolos de rejuvenescimento.">
+  <meta name="theme-color" content="#1C1A19">
 
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@200;300;400&display=swap">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1747303969063-3b90bcb3942e?auto=format&fit=crop&w=1920&q=65" fetchpriority="high">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231C1A19'/%3E%3Cpath d='M14 48V16l22 32V16M52 22a19 19 0 1 0 0 20v-9H42' fill='none' stroke='%23C5A059' stroke-width='2'/%3E%3C/svg%3E">
+
+  <!-- SEO local -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Nayara Goulart · Estética Avançada",
+    "telephone": "+5581999434460",
+    "email": "nayarabg095@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Amambaí, 256 - Candeias",
+      "addressLocality": "Jaboatão dos Guararapes",
+      "addressRegion": "PE",
+      "postalCode": "54430-160",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- SVG sprite: monograma NG -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="monogram" viewBox="0 0 64 64">
+    <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="square" stroke-linejoin="miter">
+      <path class="draw" d="M12 50V14l24 36V14"/>
+      <path class="draw" d="M54 21a19 19 0 1 0 0 22V33H43"/>
+      <path class="draw" d="M32 4l28 28-28 28L4 32z" opacity=".35"/>
+    </g>
+  </symbol>
+</svg>
+
+<!-- Preloader -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <svg class="preloader__mark"><use href="#monogram"/></svg>
+</div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <a href="#topo" class="brand" aria-label="Nayara Goulart · Estética Avançada">
+    <svg class="brand__mark"><use href="#monogram"/></svg>
+    <span class="brand__text">
+      <span class="brand__name">Nayara Goulart</span>
+      <span class="brand__sub">Estética Avançada</span>
+    </span>
+  </a>
+
+  <nav class="nav" id="nav" aria-label="Principal">
+    <a href="#clinica">A Clínica</a>
+    <a href="#procedimentos">Procedimentos</a>
+    <a href="#espaco">O Espaço</a>
+    <a href="#diferenciais">Diferenciais</a>
+    <a href="#depoimentos">Depoimentos</a>
+    <a href="#contato">Contato</a>
+    <button class="btn btn--sm nav__cta" data-open-booking><span>Agendar</span></button>
+  </nav>
+
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+    <span></span><span></span>
+  </button>
+</header>
+
+<main id="topo">
+
+  <!-- 1. HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__media" aria-hidden="true">
+      <div class="hero__fallback">
+        <i class="orb orb--1"></i><i class="orb orb--2"></i><i class="orb orb--3"></i>
+      </div>
+      <img class="hero__photo" src="https://images.unsplash.com/photo-1747303969063-3b90bcb3942e?auto=format&fit=crop&w=1920&q=65" alt="" width="1920" height="1080" fetchpriority="high" decoding="async" data-fallback="assets/hero.svg">
+      <!-- Vídeo opcional: coloque assets/hero.mp4 (e .webm). Sem ele, a imagem acima permanece. -->
+      <video class="hero__video" id="heroVideo" muted loop playsinline preload="none"
+             data-src="assets/hero.mp4" data-src-webm="assets/hero.webm" poster="assets/hero.svg"></video>
+      <div class="hero__veil"></div>
+      <div class="grain"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="eyebrow reveal">Estética Avançada · Atendimento por hora marcada</p>
+      <h1 class="hero__title">
+        <span class="line"><span>A arte de realçar</span></span>
+        <span class="line"><span>sua beleza <em>natural</em></span></span>
+        <span class="line"><span>com a precisão da ciência.</span></span>
+      </h1>
+      <div class="hero__actions reveal" style="--d:.9s">
+        <button class="btn btn--gold" data-open-booking><span>Agende sua Consulta Exclusiva</span></button>
+        <a class="link-arrow" href="#clinica">Conheça a clínica <i></i></a>
+      </div>
+    </div>
+
+    <a href="#clinica" class="scroll-cue" aria-label="Rolar para baixo"><span></span></a>
+  </section>
+
+  <!-- 2. A CLÍNICA -->
+  <section class="section about" id="clinica">
+    <div class="wrap about__grid">
+      <figure class="about__figure reveal">
+        <div class="ph ph--portrait" data-parallax="0.06">
+          <!-- Foto ilustrativa. Para usar a foto da Dra. Nayara, troque o src por assets/nayara.jpg e remova o srcset -->
+          <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1000&q=70 1000w" sizes="(min-width:760px) 45vw, 100vw" data-fallback="assets/nayara-retrato.svg" alt="Mãos segurando um frasco âmbar de sérum" width="800" height="1000" loading="lazy" decoding="async">
+        </div>
+        <figcaption class="about__caption">Cuidado em cada detalhe<small>Avaliação individualizada · Nayara Goulart</small></figcaption>
+      </figure>
+
+      <div class="about__text">
+        <p class="eyebrow reveal">A Clínica</p>
+        <h2 class="h2 reveal">Tratamentos únicos<br>para <em>peles únicas.</em></h2>
+        <p class="lead reveal">Cada rosto conta uma história. Meu trabalho é respeitá-la, refinando o que já existe de mais bonito em você, sem exageros, sem padrões prontos.</p>
+        <p class="reveal">Aliamos avaliação individualizada, tecnologia certificada e uma técnica minuciosa para entregar resultados naturais e seguros. Cada protocolo é desenhado após uma consulta detalhada, com tempo, escuta e total transparência sobre indicações e expectativas.</p>
+
+        <ul class="creds reveal">
+          <li><b>1:1</b><span>atendimento<br>exclusivo</span></li>
+          <li><b>100%</b><span>protocolos<br>personalizados</span></li>
+          <li><b>CRBM 14500</b><span>registro<br>profissional</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PROCEDIMENTOS -->
+  <section class="section procs" id="procedimentos">
+    <div class="wrap">
+      <header class="section__head">
+        <p class="eyebrow reveal">Procedimentos</p>
+        <h2 class="h2 reveal">Ciência e arte,<br><em>em cada detalhe.</em></h2>
+      </header>
+
+      <div class="procs__grid">
+        <article class="card reveal" data-proc="Toxina Botulínica">
+          <div class="card__media"><img src="https://images.unsplash.com/photo-1746708810803-722593e53772?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1746708810803-722593e53772?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1746708810803-722593e53772?auto=format&fit=crop&w=1000&q=70 1000w" sizes="(min-width:760px) 45vw, 100vw" data-fallback="assets/proc-botox.svg" alt="" width="1200" height="900" loading="lazy" decoding="async"><span class="card__n">01</span></div>
+          <div class="card__body">
+            <h3>Toxina Botulínica</h3>
+            <p>Gerenciamento do envelhecimento e suavização de linhas de expressão com naturalidade cirúrgica.</p>
+            <button class="link-arrow" data-open-booking>Solicitar avaliação <i></i></button>
+          </div>
+        </article>
+
+        <article class="card card--offset reveal" data-proc="Depilação a Laser">
+          <div class="card__media"><img src="https://images.unsplash.com/photo-1785861775561-c6db7da314a0?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1785861775561-c6db7da314a0?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1785861775561-c6db7da314a0?auto=format&fit=crop&w=1000&q=70 1000w" sizes="(min-width:760px) 45vw, 100vw" data-fallback="assets/proc-laser.svg" alt="" width="1200" height="900" loading="lazy" decoding="async"><span class="card__n">02</span></div>
+          <div class="card__body">
+            <h3>Depilação a Laser de Última Geração</h3>
+            <p>Tecnologia confortável para uma pele impecavelmente lisa e uniforme.</p>
+            <button class="link-arrow" data-open-booking>Solicitar avaliação <i></i></button>
+          </div>
+        </article>
+
+        <article class="card reveal" data-proc="Harmonização Facial">
+          <div class="card__media"><img src="https://images.unsplash.com/photo-1643684391140-c5056cfd3436?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1643684391140-c5056cfd3436?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1643684391140-c5056cfd3436?auto=format&fit=crop&w=1000&q=70 1000w" sizes="(min-width:760px) 45vw, 100vw" data-fallback="assets/proc-harmonizacao.svg" alt="" width="1200" height="900" loading="lazy" decoding="async"><span class="card__n">03</span></div>
+          <div class="card__body">
+            <h3>Harmonização e Preenchimento Facial</h3>
+            <p>Arquitetura facial avançada para restaurar volumes e contornos juvenis.</p>
+            <button class="link-arrow" data-open-booking>Solicitar avaliação <i></i></button>
+          </div>
+        </article>
+
+        <article class="card card--offset reveal" data-proc="Rejuvenescimento e Skinboosters">
+          <div class="card__media"><img src="https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&w=1000&q=70 1000w" sizes="(min-width:760px) 45vw, 100vw" data-fallback="assets/proc-skinbooster.svg" alt="" width="1200" height="900" loading="lazy" decoding="async"><span class="card__n">04</span></div>
+          <div class="card__body">
+            <h3>Rejuvenescimento e Skinboosters</h3>
+            <p>Nutrição celular profunda e estímulo de colágeno de alta performance.</p>
+            <button class="link-arrow" data-open-booking>Solicitar avaliação <i></i></button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faixa editorial -->
+  <section class="quote" aria-label="Filosofia">
+    <div class="quote__bg" data-parallax="0.12"></div>
+    <blockquote class="wrap reveal">
+      <p>“O verdadeiro luxo é <em>parecer descansada,</em> nunca diferente de si.”</p>
+    </blockquote>
+  </section>
+
+  <!-- O ESPAÇO (galeria assimétrica) -->
+  <section class="section space" id="espaco">
+    <div class="wrap">
+      <header class="section__head">
+        <p class="eyebrow reveal">O Espaço</p>
+        <h2 class="h2 reveal">Um refúgio pensado<br>para <em>desacelerar.</em></h2>
+      </header>
+
+      <div class="gallery">
+        <figure class="g g--tall reveal">
+          <img src="https://images.unsplash.com/photo-1620733723572-11c53f73a416?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1620733723572-11c53f73a416?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1620733723572-11c53f73a416?auto=format&fit=crop&w=1000&q=70 1000w" sizes="(min-width:760px) 45vw, 100vw" data-fallback="assets/espaco-aroma.svg" alt="Difusor aromático, velas e toalha enrolada" width="900" height="1100" loading="lazy" decoding="async">
+          <figcaption>Aromaterapia</figcaption>
+        </figure>
+        <figure class="g g--wide reveal" style="--d:.12s">
+          <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1000&q=70 1000w" sizes="(min-width:760px) 45vw, 100vw" data-fallback="assets/espaco-agua.svg" alt="Tratamento de spa com pedras quentes" width="1200" height="800" loading="lazy" decoding="async">
+          <figcaption>Serenidade</figcaption>
+        </figure>
+        <figure class="g g--std reveal" style="--d:.24s">
+          <img src="https://images.unsplash.com/photo-1765691622563-a57c825c8223?auto=format&fit=crop&w=900&q=70" srcset="https://images.unsplash.com/photo-1765691622563-a57c825c8223?auto=format&fit=crop&w=600&q=70 600w, https://images.unsplash.com/photo-1765691622563-a57c825c8223?auto=format&fit=crop&w=1000&q=70 1000w" sizes="(min-width:760px) 45vw, 100vw" data-fallback="assets/espaco-folha.svg" alt="Mãos segurando flores delicadas à luz suave" width="1200" height="800" loading="lazy" decoding="async">
+          <figcaption>Natureza</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. DIFERENCIAIS -->
+  <section class="section diffs" id="diferenciais">
+    <div class="wrap">
+      <header class="section__head section__head--center">
+        <p class="eyebrow reveal">Diferenciais</p>
+        <h2 class="h2 reveal">Exigência é o <em>nosso padrão.</em></h2>
+      </header>
+
+      <div class="diffs__grid">
+        <div class="diff reveal">
+          <svg class="icon icon--gold" viewBox="0 0 48 48"><path d="M24 4l16 6v12c0 11-7 18-16 22C15 40 8 33 8 22V10z"/><path d="M17 24l5 5 9-10"/></svg>
+          <h3>Tecnologia Certificada</h3>
+          <p>Apenas equipamentos padrão ouro, regulamentados e com rastreabilidade completa.</p>
+        </div>
+        <div class="diff reveal" style="--d:.12s">
+          <svg class="icon icon--gold" viewBox="0 0 48 48"><rect x="10" y="21" width="28" height="21" rx="2"/><path d="M16 21v-6a8 8 0 0 1 16 0v6"/><circle cx="24" cy="31" r="2.5"/></svg>
+          <h3>Privacidade Absoluta</h3>
+          <p>Horários espaçados entre atendimentos, garantindo total discrição e conforto.</p>
+        </div>
+        <div class="diff reveal" style="--d:.24s">
+          <svg class="icon icon--gold" viewBox="0 0 48 48"><path d="M8 40C8 20 20 8 40 8c0 20-12 32-32 32z"/><path d="M8 40L28 20"/></svg>
+          <h3>Experiência Sensorial</h3>
+          <p>Ambiente planejado com aromaterapia, iluminação suave e conforto premium.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. DEPOIMENTOS -->
+  <section class="section testi" id="depoimentos">
+    <div class="wrap">
+      <header class="section__head">
+        <p class="eyebrow reveal">Depoimentos</p>
+        <h2 class="h2 reveal">Palavras de quem <em>vive a experiência.</em></h2>
+      </header>
+
+      <div class="carousel reveal" id="carousel" aria-roledescription="carrossel" aria-label="Depoimentos">
+        <div class="carousel__track" id="track">
+          <!-- ATENÇÃO: textos de exemplo. Substitua por depoimentos reais, com autorização das clientes. -->
+          <figure class="slide">
+            <blockquote>“Um atendimento de uma delicadeza rara. Saí com a sensação de ter sido cuidada, e o resultado é tão natural que ninguém percebe, apenas elogiam meu semblante.”</blockquote>
+            <figcaption><b>M. A.</b> · Cliente há 3 anos</figcaption>
+          </figure>
+          <figure class="slide">
+            <blockquote>“A discrição me conquistou. Horário exclusivo, ambiente sereno e uma explicação clara de cada etapa. Confio plenamente.”</blockquote>
+            <figcaption><b>C. R.</b> · Cliente há 2 anos</figcaption>
+          </figure>
+          <figure class="slide">
+            <blockquote>“Eu temia o ‘rosto feito’. A Nayara entendeu exatamente o que eu queria: ficar eu mesma, só que mais luminosa.”</blockquote>
+            <figcaption><b>L. T.</b> · Cliente há 1 ano</figcaption>
+          </figure>
+        </div>
+        <div class="carousel__ui">
+          <button class="arrow" id="prev" aria-label="Depoimento anterior"><i></i></button>
+          <div class="dots" id="dots" role="tablist"></div>
+          <button class="arrow arrow--next" id="next" aria-label="Próximo depoimento"><i></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA final -->
+  <section class="cta">
+    <div class="wrap cta__inner reveal">
+      <h2 class="h2">Sua consulta,<br><em>no seu tempo.</em></h2>
+      <p>Nossa concierge responde pessoalmente e organiza o melhor horário para você.</p>
+      <button class="btn btn--gold" data-open-booking><span>Agende sua Consulta Exclusiva</span></button>
+    </div>
+  </section>
+</main>
+
+<!-- 6. FOOTER -->
+<footer class="footer" id="contato">
+  <div class="wrap footer__grid">
+    <div class="footer__info">
+      <div class="brand brand--footer">
+        <svg class="brand__mark"><use href="#monogram"/></svg>
+        <span class="brand__text">
+          <span class="brand__name">Nayara Goulart</span>
+          <span class="brand__sub">Estética Avançada</span>
+        </span>
+      </div>
+
+      <dl class="info">
+        <div>
+          <dt>Endereço</dt>
+          <dd>R. Amambaí, 256 · Candeias<br>Jaboatão dos Guararapes · PE<br>CEP 54430-160<br>
+            <a class="link-arrow link-arrow--sm" href="https://www.google.com/maps/dir/?api=1&destination=R.+Amamba%C3%AD,+256+-+Candeias,+Jaboat%C3%A3o+dos+Guararapes+-+PE,+54430-160" target="_blank" rel="noopener">Como chegar <i></i></a>
+          </dd>
+        </div>
+        <div>
+          <dt>Contato</dt>
+          <dd><a href="https://wa.me/5581999434460" id="waFooter" target="_blank" rel="noopener">(81) 99943-4460</a><br><a href="mailto:nayarabg095@gmail.com">nayarabg095@gmail.com</a></dd>
+        </div>
+        <div>
+          <dt>Horários</dt>
+          <dd>Segunda a sexta · 9h às 19h<br>Sábado · 9h às 14h<br><small>Atendimento somente com hora marcada</small></dd>
+        </div>
+      </dl>
+
+      <ul class="seals" aria-label="Selos de qualidade">
+        <li><svg viewBox="0 0 48 48"><path d="M24 4l16 6v12c0 11-7 18-16 22C15 40 8 33 8 22V10z"/><path d="M17 24l5 5 9-10"/></svg>Equipamentos<br>certificados</li>
+        <li><svg viewBox="0 0 48 48"><circle cx="24" cy="20" r="11"/><path d="M17 30l-3 14 10-5 10 5-3-14"/></svg>Padrão<br>de excelência</li>
+        <li><svg viewBox="0 0 48 48"><rect x="10" y="21" width="28" height="21" rx="2"/><path d="M16 21v-6a8 8 0 0 1 16 0v6"/></svg>Dados<br>protegidos</li>
+      </ul>
+    </div>
+
+    <div class="map" id="map">
+      <iframe title="Mapa: R. Amambaí, 256 - Candeias, Jaboatão dos Guararapes" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              data-src="https://www.google.com/maps?q=R.+Amamba%C3%AD,+256+-+Candeias,+Jaboat%C3%A3o+dos+Guararapes+-+PE,+54430-160&output=embed"></iframe>
+    </div>
+  </div>
+
+  <div class="wrap footer__bottom">
+    <span>© <span id="year">2026</span> Nayara Goulart · Estética Avançada. Todos os direitos reservados. · Fotos: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></span>
+    <span>Responsável técnica: Nayara Goulart · CRBM 14500</span>
+  </div>
+</footer>
+
+<!-- WhatsApp flutuante -->
+<a class="fab" id="fab" href="https://wa.me/5581999434460" target="_blank" rel="noopener" aria-label="Falar com a concierge no WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 4a12 12 0 0 0-10.2 18.3L4 28l5.9-1.7A12 12 0 1 0 16 4z" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M12 11c0 5 4 9 9 9l1.5-2-3-1.5-1.2 1c-1.5-.6-2.8-1.9-3.5-3.5l1-1.2L15 10z" fill="currentColor"/></svg>
+</a>
+
+<!-- Agendamento (concierge) -->
+<dialog class="modal" id="booking" aria-labelledby="bookingTitle">
+  <form method="dialog" class="modal__close-wrap"><button class="modal__close" aria-label="Fechar">×</button></form>
+  <form class="booking" id="bookingForm" novalidate>
+    <p class="eyebrow">Concierge</p>
+    <h2 class="h2" id="bookingTitle">Agende sua <em>consulta exclusiva</em></h2>
+    <p class="booking__sub">Informe suas preferências e continue seu atendimento personalizado pelo WhatsApp.</p>
+
+    <label class="field">
+      <span>Seu nome</span>
+      <input type="text" id="bName" name="nome" autocomplete="name" required placeholder="Como podemos chamá-la(o)?">
+    </label>
+
+    <label class="field">
+      <span>Interesse</span>
+      <select id="bProc" name="procedimento">
+        <option>Avaliação personalizada</option>
+        <option>Toxina Botulínica</option>
+        <option>Depilação a Laser</option>
+        <option>Harmonização Facial</option>
+        <option>Rejuvenescimento e Skinboosters</option>
+      </select>
+    </label>
+
+    <fieldset class="field">
+      <legend>Período preferido</legend>
+      <div class="pills">
+        <label><input type="radio" name="periodo" value="manhã" checked><span>Manhã</span></label>
+        <label><input type="radio" name="periodo" value="tarde"><span>Tarde</span></label>
+        <label><input type="radio" name="periodo" value="início da noite"><span>Fim do dia</span></label>
+      </div>
+    </fieldset>
+
+    <label class="field">
+      <span>Data de preferência <small>(opcional)</small></span>
+      <input type="date" id="bDate" name="data">
+    </label>
+
+    <button type="submit" class="btn btn--gold btn--block"><span>Continuar com a concierge</span></button>
+    <p class="booking__note">Seus dados são usados apenas para organizar seu atendimento.</p>
+  </form>
+</dialog>
+
+<script src="script.js" defer></script>
+</body>
+</html>
